@@ -36,23 +36,23 @@ class Match {
   };
 
   foundC = (c) => {
-    if (c === "d") {
-      return this.foundD;
+    if (c === "a") {
+      return this.foundA2;
     } else {
       return this.start;
     }
   };
 
-  foundD = (c) => {
-    if (c === "e") {
-      return this.foundE;
+  foundA2 = (c) => {
+    if (c === "b") {
+      return this.foundB2;
     } else {
       return this.start;
     }
   };
 
-  foundE = (c) => {
-    if (c === "f") {
+  foundB2 = (c) => {
+    if (c === "x") {
       return this.end;
     } else {
       return this.start;
@@ -61,4 +61,4 @@ class Match {
 }
 
 const instance = new Match();
-console.log(instance.match("I abm groot"));
+console.log(instance.match("abcabcabx"));
